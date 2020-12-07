@@ -1,4 +1,3 @@
-h1 {
-    color: red;
-  }
-  
+@import url(./blocks/card/card.css);
+@import url(./blocks/cards/cards.css);
+
