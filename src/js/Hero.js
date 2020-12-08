@@ -11,7 +11,9 @@ export class Hero {
                 <p class="card__description">Цвет волос: <span class="card__description-hair-color"></span></p>
                 <p class="card__description">Вес: <span class="card__description-mass"></span></p>
                 <p class="card__description">Цвет кожи: <span class="card__description-skin-color"></span></p>
-                <p class="card__description">Пол: <span class="card__description-gender"></span></p>               
+                <p class="card__description">Пол: <span class="card__description-gender"></span></p> 
+                <p class="card__description">Количество транспортных средств: <span class="card__description-vehicles"></span></p>     
+                <p class="card__description">Количество фильмов: <span class="card__description-films "></span></p>             
             </div>`);
 
         const hero = template.firstElementChild;        
@@ -24,7 +26,10 @@ export class Hero {
         hero.querySelector('.card__description-mass').textContent = heroObject.mass;  
         hero.querySelector('.card__description-skin-color').textContent = heroObject.skin_color;  
         hero.querySelector('.card__description-gender').textContent = heroObject.gender; 
-        
+        hero.querySelector('.card__description-vehicles').textContent = heroObject.vehicles.length; 
+        hero.querySelector('.card__description-films').textContent = heroObject.films.length; 
+
+        hero.setAttribute('data-name', heroObject.name);
         return hero;
     }
 }

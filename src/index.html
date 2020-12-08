@@ -9,6 +9,18 @@
 <body>
     <h1>Герои Star Wars</h1>
     <div class="cards"></div>
+    <div class="popup" id="popupHero">
+        <div class="popup__wrapper">
+            <div class="popup__hero-info"></div>
+            <p class="popup__subtitle"></p>
+            <div class="popup__content">
+                <h2>Транспортные средства</h2>
+                <div class="vehicles">                    
+                </div>
+            </div>
+            <img src="<%=require('./images/close.svg').default%>" alt="close" class="popup__close">
+        </div>
+    </div>
     
     <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
 </body>
