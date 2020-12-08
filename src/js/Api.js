@@ -5,6 +5,9 @@ export class Api {
 
   // получить информацию по запросу
   getInfo(url) {
+    if (url.includes('http:')) {
+      url = url.replace('http:', 'https:');
+    }
     return fetch(url, { method: 'GET' })
       .then((res) => {
         if (res.ok) {
