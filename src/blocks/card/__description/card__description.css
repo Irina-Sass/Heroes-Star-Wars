@@ -1,0 +1,9 @@
+.card__description {
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.card__description span {
+    font-weight: 400;
+}

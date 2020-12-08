@@ -1,0 +1,10 @@
+.vehicles {
+    display: flex;
+}
+
+@media (max-width: 660px) {
+    .vehicles {
+        display: flex;
+        flex-direction: column;
+    }
+}

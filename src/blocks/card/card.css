@@ -1,5 +1,16 @@
+@import url(./__description/card__description.css);
+@import url(./__title/card__title.css);
+
 .card {
     padding: 20px;
-    background-color: rgb(204, 202, 199);
+    background-color: #ffffffc2;
+    border: 3px solid #fff;
+    border-radius: 10px;
     cursor: pointer;
+    color: black;
+}
+
+.popup .card {    
+    cursor: auto;
+    
 }

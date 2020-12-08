@@ -1,0 +1,16 @@
+.page {   
+    background-image: url(../../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    padding-top: 230px;
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1023px) {
+    .page {        
+        padding-top: 150px; 
+        
+    }
+}
